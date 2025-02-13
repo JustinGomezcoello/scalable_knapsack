@@ -42,10 +42,10 @@ export const Contacto = () => {
 
 
     const showAlert = () => {
-        Swal.fire('Mensaje enviado con exito', 'Gracias por contactarte', 'success')
+        Swal.fire('Message sent successfully', 'Thank you for contacting us', 'success')
     }
     const errorAlert = () => {
-        Swal.fire('Necesitas completar el formulario', ':)', 'error')
+        Swal.fire('You need to fill out the form', ':)', 'error')
     }
 
 
@@ -95,7 +95,7 @@ export const Contacto = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
             ,
-            contact: "Rodrigo.martinez224@gmil.com"
+            contact: "justingomezcoello@gmail.com"
         },
 
 
@@ -106,7 +106,7 @@ export const Contacto = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                 </svg>
             ,
-            contact: "Zarate, Buenos Aires, Argentina."
+            contact: "Quito , Ecuador"
         },
     ]
 

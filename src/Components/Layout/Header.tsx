@@ -46,15 +46,15 @@ export const Header = () => {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52  bg-slate-300  dark:bg-slate-700 ">
-              <li className=" " > <NavLink className="link-accent" to="/inicio">Inicio</NavLink></li>
+              <li className=" " > <NavLink className="link-accent" to="/inicio">About Me</NavLink></li>
               <li className="">
-                <a>Proyectos</a>
+                <a>Proyects</a>
                 <ul className="p-2 bg-slate-400 dark:bg-slate-600 rounded-md ">
                   <li className=""><NavLink to="/ProyectoFront">Proyectos Front end</NavLink></li>
                   <li className=""><NavLink to="/ProyectoBack">Proyectos Back end</NavLink></li>
                 </ul>
               </li>
-              <li className=""><NavLink to="/contacto">Contacto</NavLink></li>
+              <li className=""><NavLink to="/contacto">Contact Me</NavLink></li>
             </ul>
           </div>
           <img className="lg:m-8 max-sm:m-20" src={rlogo}></img>
@@ -63,17 +63,17 @@ export const Header = () => {
 
         <div className="navbar-center hidden lg:flex   ">
           <ul className="menu menu-horizontal px-1 bg-transparent text-2xl text-blue-400 dark:text-white ">
-            <li className=" " > <NavLink className=" no-underline" to="/inicio">Inicio</NavLink></li>
+            <li className=" " > <NavLink className=" no-underline" to="/inicio">About Me</NavLink></li>
             <li className="">
               <details>
-                <summary>Proyectos</summary>
+                <summary>Proyects</summary>
                 <ul className="p-2 bg-slate-300  dark:bg-slate-700">
                   <li className=""><NavLink to="/ProyectoFront">Proyectos Front end</NavLink></li>
                   <li className=""><NavLink to="/ProyectoBack">Proyectos Back end</NavLink></li>
                 </ul>
               </details>
             </li>
-            <li className=""><NavLink className=" no-underline" to="/contacto">Contacto/CV</NavLink></li>
+            <li className=""><NavLink className=" no-underline" to="/contacto">Contact Me</NavLink></li>
           </ul>
         </div>
 

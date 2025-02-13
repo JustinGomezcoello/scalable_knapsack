@@ -31,7 +31,7 @@ export const MisRutas = () => {
                 <Route path="*" element={(
                     <>
                         <h1>Error 404</h1>
-                        <strong>esta pagina no existe </strong>
+                        <strong>This page not exist </strong>
                     </>
                 )} />
 

@@ -8,12 +8,12 @@ export const About = () => {
                 <div className="flex-1 max-w-lg px-12 py-5 sm:mx-auto sm:text-center lg:max-w-max lg:text-left ">
 
                     <h3 className="text-3xl font-semibold text-white md:text-7xl dark:text-slate-950 ">
-                        Sobre mi  <span className="text-transparent bg-gradient-to-r from-cyan-500 to-sky-400 bg-clip-text">soy un desarrollador web</span>
+                          <span className="text-transparent bg-gradient-to-r from-cyan-500 to-sky-400 bg-clip-text">About me </span>
                     </h3>
 
 
                     <p className="mt-3 leading-relaxed text-white dark:text-slate-950 sm:text-3xl ">
-                    Estoy estudiando programacion por mi cuenta desde hace un año lo que mas me gusto es todo lo relacionado al front y poder diseñar paginas y ser bastante meticuloso con los detalles, sigo aprendiendo para ser FullStack y ya con el Back-End me esta gustando bastante mas en especifico NestJS y espero en estos meses poder aprenderlo y ser FullStack y lograr proyectos mas grandes y complejos.
+                    I'm a Software Engineering student at Universidad de Las Américas (UDLA), Quito, Ecuador. Currently, I'm in my 6th semester, and I'm passionate about technology, software development, and innovation. I don't have a nickname, but you can call me Justin! 😄
                     </p>
 
                 </div>

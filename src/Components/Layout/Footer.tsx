@@ -6,9 +6,9 @@ export const Footer = () => {
       <aside>
 
         <p className="font-bold">
-          Rodrigo Martinez Duvivier <br />Desarrollador Web desde 2023
+          Justin Gomezcoello <br />Developer
         </p>
-        <p>Copyright © {new Date().getFullYear()} - Todos los derechos reservados</p>
+        <p>Copyright © {new Date().getFullYear()} - All rights reserved</p>
 
 
       </aside>

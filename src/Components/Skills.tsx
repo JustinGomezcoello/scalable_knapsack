@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import reactjslogo from '../../public/Img/logosSkils/reactjs.png'
-import mongodblogo from '../../public/Img/logosSkils/mongologo.png'
 import tslogo from '../../public/Img/logosSkils/typescript logo.png'
 import gitlogo from '../../public/Img/logosSkils/gitlogo.png'
 import nodejslogo from '../../public/Img/logosSkils/nodejs.png'
@@ -9,8 +8,9 @@ import csslogo from '../../public/Img/logosSkils/css.png'
 import htmlogo from '../../public/Img/logosSkils/html.png'
 import tailwindslogo from '../../public/Img/logosSkils/TailwindCSSSS.png'
 import Nestjs from '../../public/Img/logosSkils/Nestjs.png'
-import Go from '../../public/Img/logosSkils/Go.png'
-import Docker from '../../public/Img/logosSkils/Docker.png' 
+import mysql from '../../public/Img/logosSkils/mysql.png'
+import python from '../../public/Img/logosSkils/python.png'
+import csharp from '../../public/Img/logosSkils/csharp.png'
 
 
 
@@ -25,19 +25,15 @@ const team = [
         name: "NestJS",
 
     },
-    {
-        avatar: Go,
-        name: "GoLang",
 
-    },
     {
         avatar: tslogo,
         name: "TypeScript",
 
     },
     {
-        avatar: mongodblogo,
-        name: "MongoDB",
+        avatar: mysql,
+        name: "mysql",
 
     },
    
@@ -72,10 +68,16 @@ const team = [
 
     },
     {
-        avatar: Docker,
-        name: "Docker",
+        avatar: python,
+        name: "python",
 
     },
+    {
+        avatar: csharp,
+        name: "csharp",
+
+    },
+   
 ]
 
 export const Skills = () => {
