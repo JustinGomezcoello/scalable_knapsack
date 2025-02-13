@@ -13,7 +13,13 @@ export const About = () => {
 
 
                     <p className="mt-3 leading-relaxed text-white dark:text-slate-950 sm:text-3xl ">
+                    👨‍💻 About Me
                     I'm a Software Engineering student at Universidad de Las Américas (UDLA), Quito, Ecuador. Currently, I'm in my 6th semester, and I'm passionate about technology, software development, and innovation. I don't have a nickname, but you can call me Justin! 😄
+                    
+                    🚀 What I'm Currently Learning
+                    - 🔗.NET MAUI & ASP.NET – Developing full-stack applications with modern frameworks.
+                    - 🏗 Microservices Architecture – Building scalable and modular applications.
+                    - 📊 Machine Learning – Exploring the world of AI and data-driven solutions.
                     </p>
 
                 </div>
