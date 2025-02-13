@@ -1,38 +1,40 @@
-import codigo02 from '/Img/proyectos-img/codigo-img02.jpg'
+import codigo02 from '/Img/proyectos-img/codigo-img02.jpg';
 
 export const About = () => {
     return (
-        <section className="relative px-4 py-4 cta-sec md:px-1 " >
-            <div className="absolute top-0 left-0 w-full h-full bg-gray-900 dark:bg-gradient-to-r from-slate-50 to-gray-200 "></div>
-            <div className="relative z-10 items-center gap-5 lg:flex">
-                <div className="flex-1 max-w-lg px-12 py-5 sm:mx-auto sm:text-center lg:max-w-max lg:text-left ">
-
-                    <h3 className="text-3xl font-semibold text-white md:text-7xl dark:text-slate-950 ">
-                          <span className="text-transparent bg-gradient-to-r from-cyan-500 to-sky-400 bg-clip-text">About me </span>
-                    </h3>
-
-
-                    <p className="mt-3 leading-relaxed text-white dark:text-slate-950 sm:text-3xl ">
-                    👨‍💻 About Me
-                    I'm a Software Engineering student at Universidad de Las Américas (UDLA), Quito, Ecuador. Currently, I'm in my 6th semester, and I'm passionate about technology, software development, and innovation. I don't have a nickname, but you can call me Justin! 😄
-                    
-                    🚀 What I'm Currently Learning
-                    - 🔗.NET MAUI & ASP.NET – Developing full-stack applications with modern frameworks.
-                    - 🏗 Microservices Architecture – Building scalable and modular applications.
-                    - 📊 Machine Learning – Exploring the world of AI and data-driven solutions.
-                    </p>
-
-                </div>
-                <div className="flex-1 mx-auto mt-5 sm:w-9/12 lg:mt-0 lg:w-auto">
+        <section className="relative px-6 py-16 md:px-12 lg:px-20 bg-gradient-to-r from-slate-50 to-gray-200">
+            <div className="relative z-10 flex flex-col lg:flex-row items-center gap-10">
+                
+                {/* 📸 Imagen (ahora mucho más grande) */}
+                <div className="flex-1 mx-auto sm:w-11/12 lg:w-full">
                     <img
                         src={codigo02}
-                        alt=""
-                        className="w-full"
+                        alt="Coding"
+                        className="w-full h-auto rounded-2xl shadow-lg"
                     />
+                </div>
+
+                {/* 📝 Sección de Texto */}
+                <div className="flex-1 max-w-lg text-left">
+                    <h3 className="text-4xl font-extrabold text-black md:text-6xl">
+                        <span className="text-transparent bg-gradient-to-r from-cyan-500 to-sky-400 bg-clip-text">About Me </span>
+                    </h3>
+
+                    <p className="mt-6 text-lg text-gray-700 leading-relaxed sm:text-xl">
+                        👨‍💻 <span className="font-semibold">Who am I?</span> <br />
+                        I'm a <span className="font-semibold text-blue-600">Software Engineering</span> student at 
+                        <span className="text-blue-600"> Universidad de Las Américas (UDLA)</span> in Quito, Ecuador. 
+                        Currently in my 6th semester, I have a deep passion for technology, software development, and innovation.😄
+                    </p>
+
+                    <p className="mt-6 text-lg text-gray-700 leading-relaxed sm:text-xl">
+                        🚀 <span className="font-semibold">What I'm Learning:</span> <br />
+                        - 🔗 <span className="font-semibold">.NET MAUI & ASP.NET:</span> Building full-stack applications. <br />
+                        - 🏗 <span className="font-semibold">Microservices Architecture:</span> Creating scalable & modular systems. <br />
+                        - 📊 <span className="font-semibold">Machine Learning:</span> Exploring AI & data-driven solutions.
+                    </p>
                 </div>
             </div>
         </section>
-
-        
-    )
-}
+    );
+};
