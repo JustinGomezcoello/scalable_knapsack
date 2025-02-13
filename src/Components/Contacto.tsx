@@ -125,10 +125,10 @@ export const Contacto = () => {
                 <div className="flex-1 max-w-lg px-4 mx-auto text-white">
                     <div>
                         <h3 className="text-4xl font-semibold text-white sm:text-5xl">
-                            Ponete en contacto
+                        Get in touch
                         </h3>
                         <p className="mt-3 sm:text-xl">
-                            Cualquier consulta o duda que tengas o queres info solo completa el formulario y nos ponemos en contacto
+                        If you have any questions or doubts or want information, just fill out the form and we will get in touch.
                         </p>
 
 
