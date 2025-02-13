@@ -47,13 +47,7 @@ export const Header = () => {
             </div>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52  bg-slate-300  dark:bg-slate-700 ">
               <li className=" " > <NavLink className="link-accent" to="/inicio">About Me</NavLink></li>
-              <li className="">
-                <a>Proyects</a>
-                <ul className="p-2 bg-slate-400 dark:bg-slate-600 rounded-md ">
-                  <li className=""><NavLink to="/ProyectoFront">Proyectos Front end</NavLink></li>
-                  <li className=""><NavLink to="/ProyectoBack">Proyectos Back end</NavLink></li>
-                </ul>
-              </li>
+              <li className=""><NavLink to="/projects">Projects</NavLink></li>
               <li className=""><NavLink to="/contacto">Contact Me</NavLink></li>
             </ul>
           </div>
@@ -64,16 +58,7 @@ export const Header = () => {
         <div className="navbar-center hidden lg:flex   ">
           <ul className="menu menu-horizontal px-1 bg-transparent text-2xl text-blue-400 dark:text-white ">
             <li className=" " > <NavLink className=" no-underline" to="/inicio">About Me</NavLink></li>
-            <li className=" " > <NavLink className=" no-underline" to="/inicio">Proyects</NavLink></li>
-            {/* <li className="">
-              <details>
-                <summary>Proyects</summary>
-                <ul className="p-2 bg-slate-300  dark:bg-slate-700">
-                  <li className=""><NavLink to="/ProyectoFront">Proyectos Front end</NavLink></li>
-                  <li className=""><NavLink to="/ProyectoBack">Proyectos Back end</NavLink></li>
-                </ul>
-              </details>
-            </li> */}
+            <li className=""><NavLink to="/projects">Projects</NavLink></li>
             <li className=""><NavLink className=" no-underline" to="/contacto">Contact Me</NavLink></li>
           </ul>
         </div>

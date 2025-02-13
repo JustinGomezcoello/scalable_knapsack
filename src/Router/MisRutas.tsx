@@ -6,8 +6,7 @@ import { Contacto } from '../Components/Contacto'
 import { Header } from '../Components/Layout/Header'
 import { Footer } from '../Components/Layout/Footer'
 import { Inicio } from '../Components/Inicio'
-import { ProyectoFront } from '../Components/ProyectoFront'
-import { ProyectoBack } from '../Components/ProyectoBack'
+import Projects from '../Components/Projects'
 
 
 
@@ -25,8 +24,7 @@ export const MisRutas = () => {
 
                 <Route path="/" element={<Inicio/> } />
                 <Route path="/inicio" element={<Inicio/>} />
-                <Route path="/ProyectoFront" element={<ProyectoFront/>} />
-                <Route path="/ProyectoBack" element={<ProyectoBack/>} />
+                <Route path="/projects" element={<Projects />} />
                 <Route path="/contacto" element={<Contacto />} />
                 <Route path="*" element={(
                     <>
