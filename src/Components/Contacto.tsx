@@ -150,18 +150,11 @@ export const Contacto = () => {
                             <div className='iconos '>
                                 <ul className='flex gap-3 mt-6 me-auto ml-9'>
 
-
-                                    <NavLink to="https://twitter.com/Rodrigoduvivier" target="_blank" className="inline-block">
-                                        <img src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg" width="30" height="30" alt="inst" />
-                                    </NavLink>
-                                    <NavLink to="https://twitter.com/Rodrigoduvivier" target="_blank" className="inline-block" >
-                                        <img src="https://www.svgrepo.com/show/303115/twitter-3-logo.svg" width="30" height="30" alt="tw" />
-                                    </NavLink>
-                                    <NavLink to="https://github.com/RodrigoMD1" target="_blank" className="inline-block" >
+                                    <NavLink to="https://github.com/JustinGomezcoello" target="_blank" className="inline-block" >
                                         <img src="https://www.svgrepo.com/show/94698/github.svg" className="" width="30" height="30" alt="gt" />
                                     </NavLink>
 
-                                    <NavLink to="https://www.linkedin.com/in/rodrigo-martinez-duvivier-525066252/" target="_blank" className="inline-block" >
+                                    <NavLink to="https://www.linkedin.com/in/justin-gomezcoello/" target="_blank" className="inline-block" >
                                         <img src="https://www.svgrepo.com/show/28145/linkedin.svg" width="30" height="30" alt="in" />
                                     </NavLink>
 
@@ -183,12 +176,12 @@ export const Contacto = () => {
                     >
                         <div>
                             <label className="font-medium sm:text-xl">
-                                Nombre completo
+                                Full Name
                             </label>
 
 
                             <input
-                                placeholder='Nombre y apellido '
+                                placeholder='Full Name '
                                 {...register("user_name", { required: true, minLength: 2 })}
 
                                 className="w-full px-3 py-2 mt-2 text-white bg-transparent border rounded-lg shadow-sm focus:border-gray-800"
@@ -214,11 +207,11 @@ export const Contacto = () => {
                         <div>
                             <label className="font-medium sm:text-xl">
 
-                                Mensaje
+                                Message
                             </label>
 
                             <textarea
-                                placeholder='Escribi tus consultas o dudas'
+                                placeholder='Write your questions or doubts'
                                 {...register("message", { required: true, minLength: 2 })}
                                 className="w-full px-3 py-2 mt-2 bg-transparent border rounded-lg shadow-sm outline-none appearance-none resize-none h-36 focus:border-gray-800" name='message'></textarea>
                         </div>
@@ -230,7 +223,7 @@ export const Contacto = () => {
                             type="submit"
                             value='Send'
                         >
-                            Enviar
+                            Send
                         </button>
 
 

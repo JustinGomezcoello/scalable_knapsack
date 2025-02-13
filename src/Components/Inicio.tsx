@@ -1,6 +1,5 @@
 
 import { Skills } from './Skills'
-import { Proyectos } from './Proyectos'
 import { About } from './About'
 import HeroSection from './Layout/HeroSection'
 
@@ -11,7 +10,7 @@ export const Inicio = () => {
             <About />
             <Skills />
 
-            <Proyectos />
+            {/* <Proyectos /> */}
         </div>
     )
 }

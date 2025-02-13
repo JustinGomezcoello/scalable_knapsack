@@ -64,7 +64,8 @@ export const Header = () => {
         <div className="navbar-center hidden lg:flex   ">
           <ul className="menu menu-horizontal px-1 bg-transparent text-2xl text-blue-400 dark:text-white ">
             <li className=" " > <NavLink className=" no-underline" to="/inicio">About Me</NavLink></li>
-            <li className="">
+            <li className=" " > <NavLink className=" no-underline" to="/inicio">Proyects</NavLink></li>
+            {/* <li className="">
               <details>
                 <summary>Proyects</summary>
                 <ul className="p-2 bg-slate-300  dark:bg-slate-700">
@@ -72,7 +73,7 @@ export const Header = () => {
                   <li className=""><NavLink to="/ProyectoBack">Proyectos Back end</NavLink></li>
                 </ul>
               </details>
-            </li>
+            </li> */}
             <li className=""><NavLink className=" no-underline" to="/contacto">Contact Me</NavLink></li>
           </ul>
         </div>
