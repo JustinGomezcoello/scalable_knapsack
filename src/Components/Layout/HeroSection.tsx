@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import confetti from "canvas-confetti";
-import IMGyo from "/Img/proyectos-img/yo01.jpg";
+import IMGyo from "/Img/proyectos-img/justin3.jpg";
 
 /**
  *  TODO: Hacer el link para el currículum funcional 
@@ -19,21 +19,26 @@ const HeroSection = () => {
 
   return (
     <section>
-      <div className="min-h-screen hero">
-        <div className="flex-col hero-content lg:flex-row-reverse">
+      <div className="min-h-screen hero flex justify-center items-center">
+        <div className="flex flex-col lg:flex-row-reverse items-center gap-10">
+          
+          {/* 🖼 Imagen con animación y efectos */}
           <img
             src={IMGyo}
-            className="m-6 rounded-lg shadow-2xl md:w-3/4 xl:w-6/12 max-sm:w-10/12"
+            className="m-6 w-2/3 max-w-sm rounded-3xl border-4 border-cyan-500 shadow-lg shadow-blue-400/50 
+                      transition-all duration-300 hover:scale-105 animate-pulse"
           />
-          <div>
+
+          {/* 📌 Contenido de Texto */}
+          <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold text-transparent NombreCompleto bg-gradient-to-r from-cyan-500 to-sky-400 bg-clip-text sm:text-6xl">
               Justin Gomezcoello
             </h1>
-            <p className="py-6 text-black DescripcionInicio xl:text-3xl dark:text-white sm:text-2xl">
+            <p className="py-6 text-black text-transparent NombreCompleto bg-gradient-to-r xl:text-3xl dark:text-white sm:text-2xl">
               Developer
             </p>
 
-            {/* Botón con efecto Confetti */}
+            {/* 🎉 Botón con efecto Confetti */}
             <button
               className="btn glass btn-lg text-gray-50 bg-slate-600 sm:text-2xl"
               onClick={handleConfetti}

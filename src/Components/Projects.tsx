@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const projects = [
   {
     name: "Task Tracker",
@@ -48,41 +50,31 @@ const projects = [
 const Projects = () => {
   return (
     <div className="container mx-auto py-10 px-5">
-      <h2 className="text-4xl font-bold text-center mb-10">My Projects</h2>
+      <h2 className="text-4xl font-bold text-center mb-10 text-blue-400">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
           <div key={index} className="p-6 border rounded-lg shadow-xl bg-[#E0F2FE]">
             
-            {/* Contenedor de imágenes */}
-            <div className={`grid ${project.images.length > 1 ? "grid-cols-2" : "grid-cols-1"} gap-4 mb-4`}>
-              {project.images.map((image, imgIndex) => (
-                <img
-                  key={imgIndex}
-                  src={image}
-                  alt={`${project.name} image ${imgIndex + 1}`}
-                  className="w-full h-60 object-contain rounded-lg border"
-                />
-              ))}
-            </div>
+            {/* 📸 Contenedor de imágenes con escalado dinámico */}
+            <ProjectImages images={project.images} />
 
-            {/* Nombre del proyecto en negrita y negro */}
+            {/* 📝 Información del proyecto */}
             <h3 className="text-2xl font-bold text-black mb-2">{project.name}</h3>
-
-            {/* Descripción en negro */}
             <p className="text-black mb-3">{project.description}</p>
 
-            {/* Tecnologías: Solo "Technologies" en negrita, el resto en negro */}
+            {/* 🚀 Tecnologías */}
             <p className="text-black text-sm mb-3">
               <strong className="font-bold">Technologies:</strong> {project.technologies.join(", ")}
             </p>
 
+            {/* 🔗 Repositorios */}
             <div className="flex space-x-4">
               {project.repoFront && (
                 <a
                   href={project.repoFront}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline"
+                  className="text-blue-500 hover:underline font-medium"
                 >
                   Frontend Repository
                 </a>
@@ -92,7 +84,7 @@ const Projects = () => {
                   href={project.repoBack}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline"
+                  className="text-blue-500 hover:underline font-medium"
                 >
                   Backend Repository
                 </a>
@@ -101,6 +93,69 @@ const Projects = () => {
           </div>
         ))}
       </div>
+    </div>
+  );
+};
+
+// 📸 Componente de imágenes con controles manuales y escalado automático
+interface ProjectImagesProps {
+  images: string[];
+}
+
+const ProjectImages: React.FC<ProjectImagesProps> = ({ images }) => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  // Función para ir a la imagen anterior
+  const prevImage = () => {
+    setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  // Función para ir a la siguiente imagen
+  const nextImage = () => {
+    setCurrentImage((prev) => (prev + 1) % images.length);
+  };
+
+  return (
+    <div className="relative mb-4 flex flex-col items-center">
+      {/* 📷 Imagen actual con escala dinámica */}
+      <img
+        src={images[currentImage]}
+        alt="Project Preview"
+        className="w-auto h-auto max-h-[300px] md:max-h-[350px] lg:max-h-[400px] object-contain mx-auto rounded-lg border-2 border-blue-400 shadow-lg transition-all duration-300 hover:scale-105"
+      />
+
+      {/* 🔄 Controles de navegación */}
+      {images.length > 1 && (
+        <>
+          {/* ⬅ Botón Anterior */}
+          <button
+            onClick={prevImage}
+            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white px-3 py-1 rounded-full shadow-md hover:bg-blue-700"
+          >
+            ⬅
+          </button>
+
+          {/* ➡ Botón Siguiente */}
+          <button
+            onClick={nextImage}
+            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white px-3 py-1 rounded-full shadow-md hover:bg-blue-700"
+          >
+            ➡
+          </button>
+
+          {/* 🔘 Indicadores de imágenes */}
+          <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
+            {images.map((_, index) => (
+              <span
+                key={index}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentImage ? "bg-blue-500" : "bg-gray-400"
+                }`}
+              ></span>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 };

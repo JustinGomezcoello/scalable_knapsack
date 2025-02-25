@@ -2,7 +2,7 @@
 
 import { Routes, Route, BrowserRouter, } from 'react-router-dom'
 
-import { Contacto } from '../Components/Contacto'
+import  Contacto  from '../Components/Contacto'
 import { Header } from '../Components/Layout/Header'
 import { Footer } from '../Components/Layout/Footer'
 import { Inicio } from '../Components/Inicio'
