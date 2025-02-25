@@ -18,7 +18,7 @@ const formSchema = z.object({
 export const Contacto = () => {
   const form = useRef<HTMLFormElement>(null);
 
-  const { formState: { errors }, handleSubmit, register, reset } = useForm<z.infer<typeof formSchema>>({
+  const { handleSubmit, register, reset } = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
   });
 
