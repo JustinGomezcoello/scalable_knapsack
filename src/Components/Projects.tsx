@@ -2,15 +2,26 @@ import { useState } from "react";
 
 const projects = [
   {
-    name: "Task Tracker",
+    name: "AgroTrust_Global",
     description:
-      "Task Tracker is an application for managing tasks with a Node.js API and a React frontend.",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
-    repoFront: "https://github.com/JustinGomezcoello/task-tracker-frontend",
-    repoBack: "https://github.com/JustinGomezcoello/task-tracker-api",
+      "Mini app for the World App built during the Min-to-Min Hackathon WorldCoin 2025, designed to foster trust between agricultural producers and consumers through World ID verification.",
+    technologies: ["WorldCoin SDK", "React.js", "Node.js", "MongoDB", "World ID"],
+    repoFront: "https://github.com/JustinGomezcoello/AgroTrust_Global",
     images: [
-      "/Img/proyectos-img/tastarcker1.png",
-      "/Img/proyectos-img/tasktracker.png",
+      "/Img/proyectos-img/agrotrust_global1.png", 
+      "/Img/proyectos-img/agrotrust_global2.png",
+      "/Img/proyectos-img/agrotrust_global3.png",
+    ],
+  },
+  
+  {
+    name: "Facial Recognition",
+    description: "A facial recognition project using OpenCV and Python.",
+    technologies: ["Python", "OpenCV"],
+    repoFront: "https://github.com/JustinGomezcoello/FacialRecognition",
+    images: [
+      "/Img/proyectos-img/animal1.png",
+      "/Img/proyectos-img/humano1.png",
     ],
   },
   {
@@ -26,16 +37,6 @@ const projects = [
     ],
   },
   {
-    name: "Facial Recognition",
-    description: "A facial recognition project using OpenCV and Python.",
-    technologies: ["Python", "OpenCV"],
-    repoFront: "https://github.com/JustinGomezcoello/FacialRecognition",
-    images: [
-      "/Img/proyectos-img/animal1.png",
-      "/Img/proyectos-img/humano1.png",
-    ],
-  },
-  {
     name: "Nuclear Phaser",
     description:
       "A Phaser.js game with retro graphics and action mechanics.",
@@ -45,6 +46,22 @@ const projects = [
       "/Img/proyectos-img/reactor.png",
     ],
   },
+
+  {
+    name: "Task Tracker",
+    description:
+      "Task Tracker is an application for managing tasks with a Node.js API and a React frontend.",
+    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    repoFront: "https://github.com/JustinGomezcoello/task-tracker-frontend",
+    repoBack: "https://github.com/JustinGomezcoello/task-tracker-api",
+    images: [
+      "/Img/proyectos-img/tastarcker1.png",
+      "/Img/proyectos-img/tasktracker.png",
+    ],
+  },
+  
+  
+  
 ];
 
 const Projects = () => {

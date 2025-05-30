@@ -17,6 +17,16 @@ const HeroSection = () => {
     });
   }, []);
 
+  // Función para descargar el CV
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/Justin_Gomezcoello_Resume.pdf';
+    link.download = 'Justin_Gomezcoello_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section>
       <div className="min-h-screen hero flex justify-center items-center">
@@ -38,13 +48,24 @@ const HeroSection = () => {
               Developer
             </p>
 
-            {/* 🎉 Botón con efecto Confetti */}
-            <button
-              className="btn glass btn-lg text-gray-50 bg-slate-600 sm:text-2xl"
-              onClick={handleConfetti}
-            >
-              🎉
-            </button>
+            {/* Botones de interacción */}
+            <div className="flex gap-4 justify-center lg:justify-start">
+              {/* 🎉 Botón con efecto Confetti */}
+              <button
+                className="btn glass btn-lg text-gray-50 bg-slate-600 sm:text-2xl"
+                onClick={handleConfetti}
+              >
+                🎉
+              </button>
+
+              {/* 📄 Botón para descargar CV */}
+              <button
+                className="btn glass btn-lg text-gray-50 bg-slate-600 sm:text-2xl hover:bg-slate-700"
+                onClick={handleDownloadCV}
+              >
+                📄 Resume
+              </button>
+            </div>
           </div>
         </div>
       </div>

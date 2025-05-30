@@ -55,7 +55,17 @@ export const Contacto = () => {
       
       {/* 🖼 Imagen bien centrada */}
       <div className="flex flex-col justify-center items-center w-full lg:w-1/2 p-6">
-        <img src={yo01} className="w-3/4 lg:w-full max-w-lg h-auto rounded-xl shadow-lg" alt="Profile" />
+        <img 
+          src={yo01} 
+          className="w-3/4 lg:w-full max-w-lg h-auto rounded-xl 
+          border-4 border-blue-400/50 
+          shadow-[0_0_30px_rgba(59,130,246,0.5)]
+          transition-all duration-500 
+          hover:scale-105 hover:border-blue-500 
+          hover:shadow-[0_0_50px_rgba(59,130,246,0.8)]
+          animate-[pulse_3s_ease-in-out_infinite]" 
+          alt="Profile" 
+        />
       </div>
 
       {/* 📩 Sección de contacto mejor alineada */}
